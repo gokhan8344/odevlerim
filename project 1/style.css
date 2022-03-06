@@ -1,0 +1,232 @@
+
+
+
+/* menü css start */
+
+
+.menüalan {
+    list-style-type: none;
+    width: 520px;
+    height: 150px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: left right;
+    border-radius: 8px;
+    background-image:url("image/banner.jpg")
+    
+    
+
+
+}
+
+.menüalan li {
+    display:inline-block;
+    
+
+    
+}
+
+.menüalan a {
+    margin-top: 150px;
+    margin-left: -2px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display:inline-block;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+/* kayan menü düzenlemesi start*/
+     width:50px ;
+     height: 10px;
+     background: rgba(15, 15, 15, 0.575);
+     background: ;
+   
+     transition: width 2s;         
+/* kayan menü düzenlemesi end*/
+
+/* menü gölgelendirme start*/
+text-shadow: 1px 1px 2px rgb(0, 0, 0),
+                0 0 15px rgb(255, 255, 255),
+                0 0 1px  rgb(255, 255, 255);
+/* menü gölgelendirme end*/
+   
+}
+.menüalan a:hover {
+ background-color: rgba(0, 0, 0, 0.705);
+ color:rgb(243, 222, 29);
+
+    /* kayan menü düzenlemesi start*/
+         width: 70px;
+    /* kayan menü düzenlemesi end*/  
+
+    }
+
+    /* menü css end */
+    /* ürünler galeri start*/
+    .gallery {
+        margin: 6px;
+        margin-top: 40px;
+        border: 1px solid #ccc;
+        float: left;
+        width: 160px;
+        
+      }
+      
+      .gallery:hover {
+        border: 1px solid #777;
+      }
+      
+      .gallery img {
+        width: 100%;
+        height: auto;s
+      }
+      
+      .desc {
+        padding: 15px;
+        text-align: center;
+      }
+       /* ürünler galeri end*/
+       /* site background start */
+       .b {
+         background-color: rgb(194, 194, 194);
+       }
+    /*
+    .kutubanner1 {
+        width: 150px;
+        height: 176px;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 0px;
+        margin-top:0px;
+        margin-right: 25px;
+        display:inline-block;
+        box-shadow: 1px 1px 2px rgb(8, 8, 8),
+                0 0 25px rgb(114, 110, 110),
+                0 0 5px  rgb(46, 45, 45);
+                background-position: center;        
+        background-image: url(image/1.jpg); 
+             
+
+      }
+      .kutubanner2 {
+        width: 150px;
+        height: 176px;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 0px;
+        margin-top:30px;
+        margin-right: 25px;
+        display:inline-block;
+       box-shadow: 1px 1px 2px rgb(8, 8, 8),
+        0 0 25px rgb(114, 110, 110),
+        0 0 5px  rgb(46, 45, 45);
+        background-position: center;      
+        background-image: url(image/2.jpg);
+      }
+      .kutubanner3 {
+        width: 150px;
+        height: 176px;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 0px;
+        margin-top:30px;
+        margin-right: 25px;
+        display:inline-block;
+       box-shadow: 1px 1px 2px rgb(8, 8, 8),
+        0 0 25px rgb(114, 110, 110),
+        0 0 5px  rgb(46, 45, 45);
+    }
+    .kutubanner4 {
+        width: 150px;
+        height: 176px;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 0px;
+        margin-top:0px;
+        margin-right: 25px;
+        display:inline-block;
+        box-shadow: 1px 1px 2px rgb(8, 8, 8),
+                0 0 25px rgb(114, 110, 110),
+                0 0 5px  rgb(46, 45, 45);
+
+      }
+      .kutubanner5 {
+        width: 150px;
+        height: 176px;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 0px;
+        margin-top:30px;
+        margin-right: 25px;
+        display:inline-block;
+       box-shadow: 1px 1px 2px rgb(8, 8, 8),
+        0 0 25px rgb(114, 110, 110),
+        0 0 5px  rgb(46, 45, 45);
+      }
+      .kutubanner6 {
+        width: 150px;
+        height: 176px;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 0px;
+        margin-top:30px;
+        margin-right: 25px;
+        display:inline-block;
+       box-shadow: 1px 1px 2px rgb(8, 8, 8),
+        0 0 25px rgb(114, 110, 110),
+        0 0 5px  rgb(46, 45, 45);
+      }
+      .kutubanner7 {
+        width: 150px;
+        height: 176px;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 0px;
+        margin-top:0px;
+        margin-right: 25px;
+        display:inline-block;
+        box-shadow: 1px 1px 2px rgb(8, 8, 8),
+                0 0 25px rgb(114, 110, 110),
+                0 0 5px  rgb(46, 45, 45);
+
+      }
+      .kutubanner8 {
+        width: 150px;
+        height: 176px;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 0px;
+        margin-top:30px;
+        margin-right: 25px;
+        display:inline-block;
+       box-shadow: 1px 1px 2px rgb(8, 8, 8),
+        0 0 25px rgb(114, 110, 110),
+        0 0 5px  rgb(46, 45, 45);
+      }
+      .kutubanner9 {
+        width: 150px;
+        height: 176px;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 0px;
+        margin-top:30px;
+        margin-right: 25px;
+        display:inline-block;
+       box-shadow: 1px 1px 2px rgb(8, 8, 8),
+        0 0 25px rgb(114, 110, 110),
+        0 0 5px  rgb(46, 45, 45);
+      }
+   h4 {
+    display:inline-block;
+    margin-top:10px;
+    margin-right: 40px;
+    margin-left: 10px;
+    text-align: center;
+    
+   }
+   */
