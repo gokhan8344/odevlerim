@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google!</title>
+
+    <style> 
+        input[type=text] {
+                            width max:100%;
+                            box-sizing: border-box;
+                            border: 2px solid #ccc;
+                            border-radius: 4px;
+                            font-size: 16px;
+                            background-color: white;
+                            background-position: 10px 10px; 
+                            background-repeat: no-repeat;
+                            padding: 12px 210px 12px 12px;
+                            border-left:auto;
+                            }
+
+                            /* button start*/
+        input[type=submit1] {
+                            background-color: rgb(181, 185, 185);
+                            color: rgb(0, 0, 0);
+                            padding: 12px 20px 12px 20px;
+                            border: none;
+                            border-radius: 4px;
+                            cursor: pointer;
+                            float:center ;
+                            margin-right: 100px;
+                            border: left 100px;
+                            }
+            input[type=submit2] {
+                            background-color: rgb(181, 185, 185);
+                            color: rgb(0, 0, 0);
+                            padding: 12px 20px;
+                            border: none;
+                            border-radius: 4px;
+                            cursor: pointer;
+                            float:center ;
+                            margin-right: center;
+                            border: right 100px;
+                            }
+                            /* button end*/
+
+                     /* kutuların zemin düzenlemeleri start*/
+            .zmn1 {
+                            background-color: rgb(87, 202, 223);
+                            color: black;
+                            padding-top: 28px;
+                            padding-bottom: 25px;
+                            padding-left: 60px;
+                            padding-right: 60px;
+                            cursor: pointer;
+                            float: center;
+                            display: inline-block;
+                            }
+            .zmn2 {
+                                background-color: rgb(87, 202, 223);
+                                padding-top: 11px;
+                                padding-bottom:25px ;
+                                padding-left:30px ;
+                                padding-right:30px ;
+                                cursor: pointer;
+                                float: center;
+                                display: inline-block;
+                            }
+            .zmn3 {
+                                background-color: rgb(87, 202, 223);
+                                padding-top: 5px;
+                                color: black;
+                               padding-bottom: 22px;
+                                
+                                padding-left:30px;
+                                padding-right:30px ;
+                                float: center;
+                                display: inline-block;
+                            }
+                            /* kutuların zemin düzenlemeleri end*/
+
+
+                            .box {
+                                margin-left: 90px;
+                            }
+                            .box1 {
+                                margin-left: 130px;
+                            }
+                            .box2 {
+                                margin-left: 150px;
+                            }
+                            .box3 {
+                                margin-left: 30px;
+                            }
+                            .box4{
+                                
+                                max-width: 600px;
+                                max-height: 900px;
+                            }
+                            h3 {
+                                color: black;
+                            }
+                            .box5 {
+                               padding-left: 220px;
+                            }
+        </style>
+</head>
+
+<body>
+    <nav></nav>
+    <aside></aside>
+    <section >
+        <article  >
+           <img class="box1" src="https://web.archive.org/web/19981202230410im_/http://www.google.com/google.jpg"
+           width: 351px;
+           height: 113px; >
+           <h3 class="box2">Google'ı kullanarak web'de arama yapın!</h3>
+           <form >
+            <!-- search button start-->
+            <div class="row  ">
+                <input class="box" type="text" name="search" placeholder="Search.." ><br>
+                <input class="box" type="submit2" value="Kendimi Şanslı Hissediyorum">
+                <input type="submit1" value="Google Arama">
+              </div>
+           <!-- search button  end-->
+           <!--kutu 1 start-->
+              <div>
+
+                <ul class="zmn1">
+                  Özel Aramalar <br> 
+                  <a href="/web/19981202230410/http://www.google.com/stanford">Stanford Search</a> <br>
+                  <a href="/web/19981202230410/http://www.google.com/linux">Linux Search</a> 
+                </ul>
+           <!--kutu 1 end-->
+           <!--kutu 2 start-->     
+                <ul class="zmn2">
+                    <a href="help.html">Help!</a> <br>
+                    <a href="about.html">About Google!</a> <br>
+                    <a href="company.html">Company Info</a> <br>
+                    <a href="stickers.html">Google! Logos</a> <br>
+                  </ul>
+           <!--kutu 2 end-->
+           <!--kutu 3 start-->
+                <ol class="zmn3">
+                  <text class="box3">  Google'ı edinin!</text><br><text class="box3">  aylık güncellemeler</text> <br>
+                     <input type="email" name="email" value="your e-mail"> <br>
+                     
+                     <text class="box3" size="-1"><a href="https://web.archive.org/web/19981202230410/http://www.findmail.com/list/google-friends/">Arşive</a></text>      
+                
+                    <input class="box3" type="submit" name="SubmitAction" value="Abone Ol">
+
+                </ol>
+           <!--kutu 3 end--> 
+            </div>
+             
+
+           </form>
+        </article>
+    </section>
+    
+    <footer >
+  <h5 class="box5">Copyright &copy;1998 Google Inc.</h5> 
+    </footer>
+    
+</body>
+</html>
