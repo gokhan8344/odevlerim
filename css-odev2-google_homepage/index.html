@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Google</title>
+    <style>
+
+      .header {
+  list-style-type: none;
+  margin: 10px;
+  overflow: hidden;
+  margin-right: 16px;
+  font-family: arial,sans-serif;
+  font-size: 13px;
+  
+}
+
+.headerli a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+  float: right;
+
+
+}
+
+.headerli a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  text-align: center;
+  margin: 100px;
+}
+
+.search-area {
+  background: #fff;
+  display: flex;
+  border: 1px solid #dfe1e5;
+  box-shadow: none;
+  z-index: 3;
+  height: 44px;
+  margin: 0 auto;
+  margin-top: -77px;
+  width: 582px;
+  border-radius: 24px;
+}
+
+.search-area:hover {
+box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+
+}
+
+.search {
+  flex: 1;
+  display: flex;
+  padding: 5px 8px 0 16px;
+  padding-left: 14px;
+  
+}
+
+.search-img {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+
+.search-img span {
+  color: #9aa0a6;
+  height: 20px;
+  width: 20px;
+  margin-top: 0px;
+  display: inline-block;
+  fill: currentColor;
+  line-height: 24px;
+  position: relative;
+}
+
+.input-enter {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.input-area {
+  color: transparent;
+  flex: 100%;
+  white-space: pre;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  height: 34px !important;
+  display: block;
+
+}
+
+.input {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.87);
+  word-wrap: break-word;
+  outline: none;
+  display: flex;
+  flex: 100%;
+  margin-top: -68px;
+  font: 16px arial, sans-serif;
+  line-height: 34px;
+  height: 34px !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  appearance: textfield;
+  cursor: text;
+  width: 480px;
+}
+
+.googlesearch {
+  margin: 11px 4px;
+  height: 36px;
+  padding: 0 16px;
+  line-height: 27px;
+  min-width: 54px;
+  text-align: center;
+  font-size:14px;
+  cursor: pointer;
+  user-select: none;
+  border:1px #f2f2f2;
+  color: #5f6368;
+  box-shadow: none;
+  border:1px #f2f2f2;
+  
+}
+.googlesearch:hover {
+box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+
+.feelinglucky {
+  padding: 0 16px;
+  line-height: 27px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  height: 36px;
+  color: #5f6368;
+  box-shadow: none;
+  border:1px #f2f2f2;
+  
+}
+.feelinglucky:hover {
+box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+}
+
+.footer {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #dfe1e5;
+  border-top: 1px solid #dadce0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-left: -8px;
+  line-height: 10px;
+}
+
+.footerli {
+  float: left;
+  list-style-type: none;
+}
+
+.footerli a {
+  display: block;
+  color: #70757a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin-left: 14px;
+  margin-right: -20px;
+}
+
+.footerli a:hover {
+  text-decoration: underline;
+}
+.buttons {
+ text-align: center;
+}
+#of {
+  text-align: center;
+  
+
+}
+#of2 {
+  text-align: center;
+  margin-right: 800px;
+  margin-top: center;
+}
+#of3{
+  text-align: center;
+  margin-right: 200px;
+  
+}
+#of4{
+  text-align: center;
+}
+#button {
+    background-color: #1a73e8;
+    border: 1px solid transparent;
+    color: white;
+    width: 60px;
+    height: 18px;
+    border-radius: 5px;
+    text-align: center;
+    float: right;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: arial;
+    font-size: 14px;
+    
+  }
+  #voiceSearchButton {
+    background: url(chrome://new-tab-page/icons/googlemic_clr_24px.svg) no-repeat center;
+    background-size: 21px 21px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 100%;
+    outline: none;
+    padding: 0;
+    pointer-events: auto;
+    position: absolute;
+    right: 16px;
+    width: 26px;
+    padding-right: 380px;
+  }
+
+
+
+    
+
+    </style>
+  </head>
+  <body>
+    
+
+  
+    <div class="panel">
+      <nav>
+        <ul  class="header">
+
+          <li class="pic headerli">
+            <a href="https://www.github.com/cengizcmataraci" target="_blank"
+              ><img
+                src="/google_homepage/assets/profilepic.jpg"
+                alt=""
+                style="margin-right: 1px;"
+            /></a>
+          </li>
+<!--üst menü start-->
+          <li style="margin: 8px" class="headerli">
+            <a href="https://www.google.com.tr/intl/en/about/products?tab=wh"
+              ><img src="/assets/googlefirstlogo.png" alt="" style="width: 16px; height: 16px; margin-right: 3px;"></a>
+             
+             
+              <li style="margin: 8px; margin-left: -2px;" class="headerli">
+            
+                <a id="button" title="button"
+                  href=""
+                  >Sign in</a
+                >
+               
+              </li>
+              <li style="margin: 8px; margin-left: -2px;" class="headerli">
+            <a title="menü" href="#">
+              
+              <div>
+                <span>
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	                   width="24px" height="24px" viewBox="0 0 408 408" 
+                     style="enable-background:new 0 0 408 408;"
+                      xml:space="preserve">
+<g>
+<g id="apps">
+<path d="M0,102h102V0H0V102z M153,408h102V306H153V408z M0,
+408h102V306H0V408z M0,255h102V153H0V255z M153,255h102V153H153V255z
+M306,0v102h102V0H306z M153,102h102V0H153V102z M306,
+255h102V153H306V255z M306,408h102V306H306V408z"/>
+</g></g>
+<g></g>
+<g></g>
+<g></g>
+<g></g>
+<g></g>
+<g></g>
+<g></g>
+<g></g>
+<g></g>
+<g></g>
+<g></g>
+<g></g>
+<g></g>
+<g></g>
+<g></g>
+</svg>
+</span>
+</div>
+                  
+              </a>     
+                
+               
+              </li>
+
+          <li style="margin: 8px; margin-left: -2px;" class="headerli">
+            
+            <a 
+              href="">
+              <img src="/assets/indir.jpg" title="Images">
+              
+              </a>
+           
+          </li>
+          <li style="margin: 8px" class="headerli">
+            <a id="of4" title="Gmail" data-pid="23"
+            href="https://mail.google.com/mail/?tab=rm&amp;ogbl" target="_top">Gmail</a>
+              
+          </li>
+         
+          <li style="margin: 8px" class="headerli" >
+            <a id="of2" href="#">Store</a>
+          </li>
+          <li style="margin: 8px" class="headerli" >
+            <a id="of" href="https://about.google/?utm_source=google-TR&utm_medium=referral&utm_campaign=hp-footer&fg=1"
+              >About</a>
+          </li>
+          
+        </ul>
+      
+      </nav>
+      <div class="container">
+        <img
+          src="/assets/logo.png"
+          width="350px"
+          alt=""/>
+      </div>
+<!--üst menü end-->
+
+
+<!--searc icon start-->
+      <div class="search-area">
+        <div class="search">
+
+          <div class="search-img">
+
+            <svg
+            focusable="false"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            ></path>
+            
+          </svg>
+<!--searc icon end-->
+
+<!--searc sesli arama button start-->
+ 
+            <button id="voiceSearchButton" title="">
+              <span>
+              
+              
+              
+                <svg  xmlns="http://www.w3.org/2000/svg"
+                width="24"  height="24" >
+                
+               <path fill="none" d="M0 0h24v24H0z"/>
+               <path  fill="#4285F4"
+                d="M12 15c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v7c0 1.66 1.34 3 3 3z"/>
+               <path class="path" fill="#34A853" 
+               d="M11 18.92h2V22h-2z"/>
+               <path  fill="#F4B400"
+                d="M7 12H5c0 1.93.78 3.68 2.05 4.95l1.41-1.41C7.56 14.63 7 13.38 7 12z"/>
+               <path  fill="#EA4335" 
+               d="M12 17c-1.38 0-2.63-.56-3.54-1.47l-1.41 1.41A6.99 6.99 0 0 0 12.01 19c3.87 0 6.98-3.14 6.98-7h-2c0 2.76-2.23 5-4.99 5z"/>
+             
+               
+              </svg>
+           
+              </span>
+           
+            </button>
+<!--searc sesli arama button  end-->
+          </div>
+ <!--searc start-->
+          <div class="input-enter">
+            <div class="input-area">
+              <input
+                type="text"
+                class="input"
+                maxlength="2048"
+                autofocus="true"
+              />
+              
+              
+            </div>
+<!--searc end-->
+          </div>
+        </div>
+      </div>
+<!--searc botton  start-->
+      <div class="buttons">
+        <a href=""
+          ><button class="googlesearch">Google Search</button></a
+        >
+        <a href=""
+          ><button class="feelinglucky">I'm Feeling Lucky</button></a
+        >
+      </div>
+    </div>
+<!--searc botton end-->
+    <nav>
+<!--footer menü start-->
+      <ul class="footer">
+        <li class="footerli">
+          <a
+            href="https://www.google.com/intl/en_tr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1"
+            >Advertising</a
+          >
+        </li>
+        <li class="footerli">
+          <a
+            href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1"
+            >Business</a
+          >
+        </li>
+        
+        <li class="footerli">
+          <a href="https://google.com/search/howsearchworks/?fg=1"
+            >How Search works</a
+          >
+        </li>
+
+        <li class="footerli" style="float: right; margin-right: 35px">
+          <a href="https://www.google.com/preferences?hl=en">Settings</a>
+        </li>
+
+        <li class="footerli" style="float: right">
+          <a href="https://policies.google.com/terms?hl=en-TR&fg=1">Terms</a>
+        </li>
+
+        <li class="footerli" style="float: right">
+          <a href="https://policies.google.com/privacy?hl=en-TR&fg=1">Privacy</a>
+        </li>
+      </ul>
+<!--footer menü end-->
+    </nav>
+  </body>
+</html>
